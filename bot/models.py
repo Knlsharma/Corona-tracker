@@ -12,6 +12,7 @@ class TotalCases(models.Model):
     active_cases = models.BigIntegerField(null = True)
     serious = models.IntegerField(null = True)
     per_population = models.IntegerField()
+    first_case = models.TextField()
 
     class Meta:
         db_table = 'total_cases'
